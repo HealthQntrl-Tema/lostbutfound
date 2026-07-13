@@ -460,6 +460,81 @@
 }
 /*** Feature End ***/
 
+/*** About Section Start ***/
+.about-highlight-card,
+.about-side-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 20px;
+    border: 1px solid rgba(1, 95, 201, 0.12);
+    background: linear-gradient(135deg, #ffffff 0%, #f6faff 100%);
+    box-shadow: 0 18px 45px rgba(15, 23, 42, 0.07);
+    padding: 2rem;
+}
+
+.about-highlight-card::before,
+.about-side-card::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(135deg, rgba(1, 95, 201, 0.05), rgba(255, 255, 255, 0));
+    pointer-events: none;
+}
+
+.about-icon {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    border-radius: 16px;
+    background: linear-gradient(135deg, var(--bs-primary), #5aa4ff);
+    color: var(--bs-white);
+    box-shadow: 0 12px 25px rgba(1, 95, 201, 0.2);
+}
+
+.about-highlight-card h4,
+.about-side-card h4 {
+    color: #0f172a;
+    font-weight: 700;
+}
+
+.about-highlight-card p,
+.about-side-card p {
+    color: #4b5563;
+    line-height: 1.8;
+}
+
+.about-card-footer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-top: 1.25rem;
+}
+
+.about-card-footer span {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+    padding: 0.45rem 0.75rem;
+    border-radius: 999px;
+    background: rgba(1, 95, 201, 0.06);
+    color: #2a3d5a;
+    font-size: 0.95rem;
+}
+
+.about-card-footer i {
+    color: var(--bs-primary);
+}
+
+@media (max-width: 767.98px) {
+    .about-highlight-card,
+    .about-side-card {
+        padding: 1.5rem;
+    }
+}
+/*** About Section End ***/
 
 /*** Service Start ***/
 .service .service-item {
@@ -683,6 +758,12 @@
 
 .team .team-item .team-img img {
     transition: 0.5s;
+}
+
+.team .team-item .team-img img{
+    height:306px;
+    width:100%;
+    object-fit:fill;
 }
 
 .team .team-item:hover .team-img img {
