@@ -369,7 +369,7 @@
 .bg-breadcrumb {
     position: relative;
     overflow: hidden;
-    background: linear-gradient(rgba(1, 95, 201, 0.9), rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg);
+    background: linear-gradient(#198754, rgba(0, 0, 0, 0.2)), url(../img/bg-breadcrumb.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -663,13 +663,18 @@
 /*** FAQs Start ***/
 .faq-section .accordion .accordion-item .accordion-header .accordion-button {
     color: var(--bs-white);
-    background: rgba(1, 95, 201, .8);
+    background: #177322;
     font-size: 18px;
 }
 
 .faq-section .accordion .accordion-item .accordion-header .accordion-button.collapsed {
     color: var(--bs-primary);
     background: var(--bs-light);
+}
+
+.faq-section .accordion-button:focus{
+    border-color:transparent !important;
+    box-shadow: none !important;
 }
 /*** FAQs End ***/
 
